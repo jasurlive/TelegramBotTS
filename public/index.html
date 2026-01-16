@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Bot Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <h1>Telegram Bot Dashboard</h1>
+
+      <label for="token">Bot Token:</label>
+      <input
+        type="text"
+        id="token"
+        placeholder="Enter your Telegram Bot Token"
+      />
+
+      <label for="webhook">Webhook URL:</label>
+      <input
+        type="text"
+        id="webhook"
+        placeholder="https://your-domain/api/index"
+      />
+
+      <button id="setWebhook">Set Webhook</button>
+      <button id="editWebhook">Edit Webhook</button>
+      <button id="removeWebhook">Remove Webhook</button>
+      <button id="showStatus">Show Webhook Status</button>
+      <button id="clearCache">Clear Pending Requests</button>
+
+      <div class="output" id="output"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
