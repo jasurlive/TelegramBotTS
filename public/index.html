@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Telegram Bot Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/img/bot.png" />
+    <meta
+      name="description"
+      content="Telegram bot made in TypeScript/JavaScript ツ. Fully customizable and easy to interact."
+    />
+    <link rel="apple-touch-icon" href="bot.png" />
+    <title>Bot Webhook Control</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="dashboard">
@@ -18,11 +24,7 @@
       />
 
       <label for="webhook">Webhook URL:</label>
-      <input
-        type="text"
-        id="webhook"
-        placeholder="https://your-domain/api/index"
-      />
+      <input type="text" id="webhook" />
 
       <button id="setWebhook">Set Webhook</button>
       <button id="editWebhook">Edit Webhook</button>
@@ -32,6 +34,7 @@
 
       <div class="output" id="output"></div>
     </div>
-    <script src="main.js"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>
